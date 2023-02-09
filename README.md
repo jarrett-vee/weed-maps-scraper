@@ -9,3 +9,5 @@ https://weedmaps.com/dispensaries/in/united-states > select a state > select a c
 Originally I had it import the URLs from a .txt file but found it easier to do it manually.
 
 It is possible to change which data you'd like the program to pull. Currently it will pull the name, state, city, and email of the dispensary. Different headers can be found on the API URL.
+
+As of 2/9/23 - this works perfectly and processes about 2 links per second (while navigating up to page seven of each link, which I found to be the limit of usefulness).
