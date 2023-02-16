@@ -21,7 +21,7 @@ def main():
                 data = {k: listing[k] for k in headers}
                 final_data.append(data)
     final_df = dd.from_pandas(pd.DataFrame(final_data, columns=headers), npartitions=1)
-    final_df.to_csv('result.csv', index=False, single_file=True, mode='a')
+    final_df.to_csv('result.csv', index=False, single_file=True, mode='w')
 
 if __name__ == '__main__':
     main()
